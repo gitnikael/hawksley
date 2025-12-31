@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@uzi</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="styles.css" rel="stylesheet">
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yofukashino/Sparkles.js@main/sparkles.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="unicornuzi/HAWKSLEY.png" />
+</head>
+<body>
+    <audio id="bg-audio" loop>
+        <source src="uzi.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="entrance-overlay">
+        <p>© Uzi  || hawksley</p>
+    </div>
+
+    <div id="volume-control">
+        <i class='bx bxs-volume-full' id="volume-icon"></i>
+        <input type="range" id="volume-slider" min="0" max="100" value="50">
+    </div>
+
+    <video id="bg-video" autoplay loop muted playsinline>
+        <source src="yk.mp4" type="picture/webp">
+    </video>
+
+    <div class="stars" id="starfield"></div>
+
+    <div class="profile-card">
+        <div class="corner-decoration" style="top: -20px; left: -20px;"></div>
+        <div class="corner-decoration" style="top: -20px; right: -20px; transform: scaleX(-1);"></div>
+
+    <div class="profile-container">
+        <div class="profile-pic-container">
+            <img class="profile-pic" src="uzi.webp" alt="Profile">
+            <img src="https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96&passthrough=true" style="width: 150px; height: 170px; position: absolute; top: -10px; left: 10px; object-fit: cover; margin-left: -11px; -webkit-user-drag: none;" class="profile-decoration">
+        </div>
+        <h1 class="display-name">Uzi</h1>
+        <p id="typed-text"></p>
+
+
+        <div class="views">
+            <i class='bx bx-show'></i>
+            666 views
+        </div>
+
+        <div class="social-links">
+            <a href="https://discord.com/purpz" class="social-icon">
+                <i class='bx bxl-discord'></i>
+            </a>
+        <div class="footer">
+            Powered by <a href="#">hawksley</a>
+        </div>
+    </div>
+
+    <style>
+        * {
+            cursor: url(hvxn/cursor.cur) 16 16, auto !important;
+        }
+
+        .profile-pic-container {
+            position: relative;
+            display: inline-block; /* allows the container to only be as big as the image */
+        }
+
+        .profile-decoration {
+            width: 138px;
+            height: 130px;
+            position: absolute;
+            top: -10px;
+            left: -1px;
+            object-fit: cover;
+            margin-left: -11px;
+            -webkit-user-drag: none;
+        }
+    </style>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
